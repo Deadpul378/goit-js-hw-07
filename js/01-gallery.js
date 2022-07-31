@@ -21,7 +21,7 @@ function largeImage(event) {
   const modalImg = event.target.dataset.source;
   const instance = basicLightbox.create(template(modalImg));
   instance.show(modalImg);
-  document.addEventListener("keydown", (e) => {
+  document.addEventListener("keydown", (event) => {
     if (event.code === "Escape") {
       instance.close();
     }
